@@ -1,0 +1,22 @@
+name: Wooler
+version: 1.0.0
+author: HimbeersaftLP
+api:
+- 1.14.0
+- 2.0.0
+main: HimbeersaftLP\Wooler\main
+commands:
+    wool:
+        usage: "/wool <id|give|list> [id]"
+        description: "View WinAPI info."
+        permission: winapi.cmd
+permissions:
+    wooler.id:
+        default: true
+        description: "Permission for /woll id"
+    wooler.give:
+        default: op
+        description: "Permission for /wool give"
+    wooler.list:
+        default: true
+        description: "Permission for /wool list"
