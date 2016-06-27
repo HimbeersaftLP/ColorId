@@ -8,8 +8,7 @@ main: HimbeersaftLP\Wooler\main
 commands:
     wool:
         usage: "/wool <id|give|list> [id] [count]"
-        description: "View WinAPI info."
-        permission: winapi.cmd
+        description: "Main command."
 permissions:
     wooler.id:
         default: true
