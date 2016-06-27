@@ -1,5 +1,5 @@
 name: Wooler
-version: 1.0.0
+version: 1.0.1
 author: HimbeersaftLP
 api:
 - 1.14.0
@@ -8,7 +8,7 @@ main: HimbeersaftLP\Wooler\main
 commands:
     wool:
         usage: "/wool <id|give|list> [id] [count]"
-        description: "Main command."
+        description: "Main command of Wooler."
 permissions:
     wooler.id:
         default: true
