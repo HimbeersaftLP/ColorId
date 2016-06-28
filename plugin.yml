@@ -1,14 +1,17 @@
-name: Wooler
+name: ColorId
 version: 1.0.1
 author: HimbeersaftLP
 api:
 - 1.14.0
 - 2.0.0
-main: HimbeersaftLP\Wooler\main
+main: HimbeersaftLP\ColorId\main
 commands:
     wool:
         usage: "/wool <id|give|list> [id] [count]"
-        description: "Main command of Wooler."
+        description: "Get IDs of wool and give yourself wool."
+    clay:
+        usage: "/clay <id|give|list> [id] [count]"
+        description: "Get IDs of clay and give yourself clay."
 permissions:
     wooler.id:
         default: true
@@ -19,3 +22,12 @@ permissions:
     wooler.list:
         default: true
         description: "Permission for /wool list"
+    clayer.id:
+        default: true
+        description: "Permission for /clay id"
+    clayer.give:
+        default: op
+        description: "Permission for /clay give"
+    clayer.list:
+        default: true
+        description: "Permission for /clay list"
