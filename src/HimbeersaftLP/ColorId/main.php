@@ -1,5 +1,5 @@
 <?php
-namespace HimbeersaftLP\Wooler;
+namespace HimbeersaftLP\ColorId;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\command\Command;
@@ -11,10 +11,10 @@ class Main extends PluginBase implements Listener{
      
      public function onEnable(){
           $this->getServer()->getPluginManager()->registerEvents($this,$this);
-          $this->getLogger()->info("Wooler by HimbeersaftLP enabled!");
+          $this->getLogger()->info("ColorId by HimbeersaftLP enabled!");
      }
      
-     public function getWoolMeta(string $color){
+     public function getColorMeta(string $color){
           if($color === "white"){
                $meta = 0;
           }elseif($color === "orange"){
@@ -67,7 +67,7 @@ class Main extends PluginBase implements Listener{
                                              return false;
                                              break;
                                         }else{
-                                             $meta = $this->getWoolMeta(strtolower($args[1]));
+                                             $meta = $this->getColorMeta(strtolower($args[1]));
                                              if($meta === false){
                                                   $sender->sendMessage(TF::RED . "Color " . $args[1] . " not found!");
                                                   break;
@@ -90,7 +90,7 @@ class Main extends PluginBase implements Listener{
                                                   return false;
                                                   break;
                                              }else{
-                                                  $meta = $this->getWoolMeta(strtolower($args[1]));
+                                                  $meta = $this->getColorMeta(strtolower($args[1]));
                                                   if($meta === false){
                                                        $sender->sendMessage(TF::RED . "Color " . $args[1] . " not found!");
                                                        break;
