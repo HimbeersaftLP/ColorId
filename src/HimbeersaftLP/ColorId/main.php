@@ -177,7 +177,7 @@ class Main extends PluginBase implements Listener{
                                                             $count = 1;
                                                        }
                                                        $sender->getInventory()->addItem(Item::get(159,$meta,$count));
-                                                       $sender->sendMessage("clay with ID 159:" . $meta . " has been successfully added to your inventory");
+                                                       $sender->sendMessage("Clay with ID 159:" . $meta . " has been successfully added to your inventory");
                                                        break;
                                                   }
                                                   break;
