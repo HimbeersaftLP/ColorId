@@ -15,7 +15,7 @@ commands:
 permissions:
     wooler.id:
         default: true
-        description: "Permission for /woll id"
+        description: "Permission for /wool id"
     wooler.give:
         default: op
         description: "Permission for /wool give"
