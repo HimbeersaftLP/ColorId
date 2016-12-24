@@ -7,7 +7,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\Player;
 use pocketmine\item\Item;
 use pocketmine\utils\TextFormat as TF;
-class Main extends PluginBase implements Listener{
+class main extends PluginBase implements Listener{
      
      public function onEnable(){
           $this->getServer()->getPluginManager()->registerEvents($this,$this);
