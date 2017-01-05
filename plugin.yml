@@ -1,9 +1,7 @@
 name: ColorId
 version: 2.0.0
 author: HimbeersaftLP
-api:
-- 1.14.0
-- 2.0.0
+api: [1.14.0, 2.0.0, 3.0.0, 3.0.0-ALPHA1]
 main: HimbeersaftLP\ColorId\main
 commands:
     wool:
